@@ -1,0 +1,14 @@
+# Frontend
+Portfolio-waad/node_modules/
+Portfolio-waad/.cache/
+Portfolio-waad/dist/
+Portfolio-waad/build/
+
+# Backend
+portfolio_backend/node_modules/
+portfolio_backend/dist/
+
+# Global
+.env
+.vercel/
+.cache/

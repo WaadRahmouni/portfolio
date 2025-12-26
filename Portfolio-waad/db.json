@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Waad Rahmouni",
+      "email": "waad@admin.com",
+      "password": "123456",
+      "role": "ADMIN"
+    }
+  ],
+  "projects": [
+    {
+      "id": "2",
+      "name": "WeatherNow",
+      "description": "Application météo en temps réel avec géolocalisation",
+      "techStack": "React Native, JavaScript, API REST",
+      "image": "weather.jpg",
+      "github": "",
+      "demo": "https://weathernow-demo.com"
+    },
+    {
+      "id": "3",
+      "name": "ChatApp",
+      "description": "Application de messagerie en temps réel avec authentification",
+      "techStack": "Flutter, Firebase, Node.js",
+      "image": "chatt.png",
+      "github": "https://github.com/example/chatapp",
+      "demo": "https://chatapp-demo.com"
+    },
+    {
+      "id": "3190",
+      "name": "ChatApp",
+      "description": "Application de messagerie en temps réel avec authentification",
+      "techStack": "Flutter, Firebase, Node.js",
+      "image": "",
+      "github": "https://github.com/example/chatapp",
+      "demo": "https://chatapp-demo.com"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Licence en GLSI",
+      "university": "Institut International de Technologie (IIT) - Sfax",
+      "year": "2022 - 2025",
+      "description": "Génie Logiciel et Systèmes d'Information - 3ème année"
+    },
+    {
+      "id": 2,
+      "degree": "Baccalauréat Scientifique",
+      "university": "Lycée Secondaire - Sfax",
+      "year": "2022",
+      "description": "Mention Très Bien - Spécialité Mathématiques"
+    }
+  ]
+}

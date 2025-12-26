@@ -1,0 +1,211 @@
+/* ======================== */
+/* Dashboard Layout          */
+/* ======================== */
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f8;
+}
+
+/* ======================== */
+/* Sidebar                  */
+/* ======================== */
+
+.dashboardSidebar {
+  width: 220px;
+  background-color: #1f2937;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.dashboardSidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboardSidebar li {
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.dashboardSidebar li:hover {
+  background-color: #374151;
+}
+
+.dashboardSidebar li.active {
+  background-color: #4b5563;
+  font-weight: bold;
+}
+
+/* ======================== */
+/* Dashboard Content        */
+/* ======================== */
+
+.dashboardContent {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Header inside Dashboard */
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboardHeader h2 {
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+.dashboardHeader button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dashboardHeader button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ======================== */
+/* Table Styles             */
+/* ======================== */
+
+.dashboardTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dashboardTable th,
+.dashboardTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #4161a2;
+  color:black
+}
+
+.dashboardTable th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dashboardTable tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Buttons inside table */
+.btn {
+  padding: 6px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn.edit {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.btn.edit:hover {
+  background-color: #d97706;
+}
+
+.btn.delete {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.btn.delete:hover {
+  background-color: #b91c1c;
+}
+
+/* ======================== */
+/* Form Styles              */
+/* ======================== */
+
+.EducationForm,
+.ProjectForm {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.EducationForm input,
+.EducationForm textarea,
+.ProjectForm input,
+.ProjectForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.EducationForm input:focus,
+.EducationForm textarea:focus,
+.ProjectForm input:focus,
+.ProjectForm textarea:focus {
+  border-color: #2563eb;
+}
+
+.EducationForm button,
+.ProjectForm button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.EducationForm button:hover,
+.ProjectForm button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboardSidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .dashboardSidebar li {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .dashboardContent {
+    padding: 20px;
+  }
+}

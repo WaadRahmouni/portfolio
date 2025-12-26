@@ -1,0 +1,374 @@
+/* Styles Élégants Thème Sombre pour About/Education */
+.AboutPage {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 100vh;
+  color: #e6e6e6;
+}
+
+.AboutContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 60px;
+  align-items: start;
+}
+
+.AboutTextHeading {
+  font-size: 3.2rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #8a2be2, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Highlight {
+  font-weight: 600;
+}
+
+/* Sections */
+.SectionContainer {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.SectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.SectionIcon {
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(138, 43, 226, 0.1);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.SectionTitle {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Cartes Éducation */
+.EducationGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.EducationCard {
+  background: rgba(30, 30, 46, 0.7);
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.EducationCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(138, 43, 226, 0.5);
+  box-shadow: 0 12px 40px rgba(138, 43, 226, 0.2);
+}
+
+.EducationTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.Degree {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+  max-width: 70%;
+}
+
+.Year {
+  background: linear-gradient(135deg, #8a2be2 0%, #00bfff 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.University {
+  font-size: 1.1rem;
+  color: #00bfff;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.University::before {
+  content: "🏛️";
+  font-size: 1rem;
+}
+
+.Description {
+  color: #b3b3cc;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.TimelineDot {
+  position: absolute;
+  left: -15px;
+  top: 40px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #8a2be2 0%, #00bfff 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(138, 43, 226, 0.3);
+}
+
+/* Cartes Expériences */
+.ExperienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ExperienceCard {
+  background: rgba(30, 30, 46, 0.7);
+  border-radius: 14px;
+  padding: 25px;
+  border-left: 4px solid #00bfff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ExperienceCard:hover {
+  transform: translateX(5px);
+  border-left-color: #8a2be2;
+  box-shadow: 0 12px 40px rgba(0, 191, 255, 0.2);
+}
+
+.ExperienceTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.Role {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.Company {
+  color: #8a2be2;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.TechStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.TechPill {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.8) 0%, rgba(0, 191, 255, 0.8) 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.TechPill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+}
+
+/* Animation Side */
+.AnimationSide {
+  position: sticky;
+  top: 40px;
+}
+
+.EducationIllustration {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5)) 
+          brightness(0.9) 
+          contrast(1.1);
+}
+
+/* Skills Section */
+.SkillsSection {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.SectionHeaderCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.SectionTitleCenter {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .AboutContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .AnimationSide {
+    position: relative;
+    top: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .AboutTextHeading {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutPage {
+    padding: 40px 15px;
+  }
+  
+  .AboutTextHeading {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+  
+  .EducationTop,
+  .ExperienceTop {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .Year {
+    align-self: flex-start;
+  }
+  
+  .Degree {
+    max-width: 100%;
+  }
+  
+  .SectionIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+  }
+  
+  .SectionTitle {
+    font-size: 1.6rem;
+  }
+  
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .EducationCard,
+  .ExperienceCard {
+    padding: 25px 20px;
+  }
+  
+  .Degree {
+    font-size: 1.3rem;
+  }
+  
+  .AboutTextHeading {
+    font-size: 2rem;
+  }
+  
+  .SectionTitle {
+    font-size: 1.4rem;
+  }
+  
+  .SectionTitleCenter {
+    font-size: 1.8rem;
+  }
+}
+
+/* Effets de brillance subtils */
+.EducationCard::before,
+.ExperienceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.5), transparent);
+}
+
+/* Effet de particules subtiles (optionnel) */
+.AboutPage::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 191, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.AboutContent,
+.SkillsSection {
+  position: relative;
+  z-index: 1;
+}
