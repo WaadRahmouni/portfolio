@@ -9,19 +9,22 @@ const educationRoutes = require("./src/routes/educationRoutes");
 
 const app = express();
 
-app.use(cors({
-  origin: "*",
-  credentials: true
-}));
+// Middlewares
+app.use(cors({ origin: "*", credentials: true }));
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/uploads", express.static("uploads"));
 app.use("/api/education", educationRoutes);
 
+// Connexion à MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connecté"))
   .catch(err => console.error(err));
 
-module.exports = app;
+// ✅ LIGNE INDISPENSABLE : démarrage du serveur
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
