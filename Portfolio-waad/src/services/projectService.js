@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "/api/projects";
 
 const authHeader = () => ({
   headers: {
